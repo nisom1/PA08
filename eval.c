@@ -6,8 +6,8 @@
 bool expressionValid(char* filename, Stack * * list, int * numOPS, int * numNUMS)
 {
    // open the file to read
-   FILE * fptr = fopen(filename, "r");
-      if (fptr == NULL){
+   FILE * fptr1 = fopen(filename, "r");
+      if (fptr1 == NULL){
                 return EXIT_FAILURE;
 	}; // if fopen fails, return false
 
