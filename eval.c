@@ -41,17 +41,6 @@ bool expressionValid(char* filename, Stack * * list, int * numOPS, int * numNUMS
   return true;
 }
 
-bool expressionWrite(char* filename, float result)
-{
-  FILE * outptr = fopen(filename, "w");
-  if (outptr == NULL){
-      return false; // if fopen fails, return false
-    } // do not use fclose since fopen already fails
-
-    fprintf(outptr,"%f",result);
-    fclose(outptr);
-    return true;
-}
 
 float calcValues(Stack * * list, char ch){
   switch(ch){

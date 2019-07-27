@@ -11,12 +11,13 @@ int main (int argc, char ** argv) {
 		return EXIT_FAILURE;
 	}
 
-	
+	Stack * * stackList; // initializing the stackList
+	stackList->head == NULL;
 
-	float result; //store the result of your calculation here.
+	expressionValid(argv[1],stackList, OPS, NUMS); // checking that it's a valid expression
 	
-	/* Insert code here to perform the RPN calculation.
-	Don't forget to free any memory you allocate once you're done with it! */
+	float result; // result of calculation
+	result = parseExpression(Stack * * list);
 
 	printf("%f\n", result);
 	
