@@ -1,13 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include "stack.h"
 #include "calc.h"
 
 int main (int argc, char ** argv) {
 	if (argc != 2) {
 		fprintf(stderr, "Incorrect number of arguments.\n");
-		fprintf(stderr, "Usage: ./pa11 <input file>\n");		
+		fprintf(stderr, "Usage: ./pa08 <input file>\n");		
 		return EXIT_FAILURE;
 	}
+
+	
 
 	float result; //store the result of your calculation here.
 	
