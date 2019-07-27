@@ -8,10 +8,7 @@ bool isEmpty(Stack * list)
   else
 	return false;
 }
-void initializeStack( Stack * list){
-   s->head == NULL
-        return true; 
-}
+
 // We will only be pushing and poping NUMBERS (we're parsing), so push and pop can return INTs
 
 int push(Stack * list, int val)
