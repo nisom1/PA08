@@ -3,8 +3,9 @@
 #include <stdbool.h>
 #include <ctype.h>
 
-typedef struct Node {
-  int val;
+#ifndef PILE 
+typedef struct Node{
+  float  val;
   struct Node* next;
 }Node;
 
@@ -12,8 +13,9 @@ typedef struct{
   Node* head;
 }Stack;
 
-int push(Stack * * list, int val);
-int pop(Stack * * list);
+int push(Stack * list, float val);
+float pop(Stack *  list);
 
-bool isEmpty(Stack* s);
+#endif
+//bool isEmpty(Stack* s);
 

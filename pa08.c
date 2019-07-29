@@ -1,25 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "stack.h"
-#include "calc.h"
+#include <string.h>
+#include "pile.h"
+#include "eval.h"
+
 
 int main (int argc, char ** argv) {
 	if (argc != 2) {
+		printf("wrong num arguments");
 		fprintf(stderr, "Incorrect number of arguments.\n");
 		fprintf(stderr, "Usage: ./pa08 <input file>\n");		
 		return EXIT_FAILURE;
 	}
 
-	Stack * * stackList; // initializing the stackList
-	stackList->head == NULL;
-
-	expressionValid(argv[1],stackList, OPS, NUMS); // checking that it's a valid expression
+	Stack list = {.head = NULL};
+	//if (!list) return NULL;
+	//list->head->next = NULL;
 	
-	float result; // result of calculation
-	result = parseExpression(Stack * * list);
-
-	printf("%f\n", result);
+	//expressionValid(argv[1]); // checking that it's a valid expression
 	
+	// float result; // result of calculation
+	parseExpression(list,argv[1]);
 	return EXIT_SUCCESS;
 }
