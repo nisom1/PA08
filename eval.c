@@ -144,7 +144,7 @@ int parseExpression(Stack list, char* filename)
 
  // Valid Expression 
   if(numOPS == (numNUMS - 1)){
-    printf("%f\n", result);
+    printf("%f", result);
     fclose(fptr3);
     return EXIT_SUCCESS;
   }

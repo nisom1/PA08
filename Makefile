@@ -1,3 +1,4 @@
+		return ((la == T_SUB) && isDigit(la2));	08_inputs/in0
 CFLAGS = -std=c99 -g -Wall -Wshadow --pedantic -Wunreachable-code -Wvla -Werror
 COVFLAGS = -fprofile-arcs -ftest-coverage
 GCC = gcc $(CFLAGS) $(COVFLAGS)
