@@ -1,0 +1,4 @@
+70
+
+Comment: In eval.c, line 147 I still see "Result:" appended to the computed result. This causes problems with the grader as mentioned earlier.
+However, I ran your submission manually.
